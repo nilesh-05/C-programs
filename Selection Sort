@@ -1,9 +1,10 @@
 #include <stdio.h>
 int main()
 {
-    int i,j,k,a[100],elements,temp;
+    int elements;
     printf("Enter the number of elements ");
     scanf("%d",&elements);
+    int i,j,k,a[elements],temp;
     printf("Enter the elements in unsorted manner\n");
     for(k=0;k<elements;k++)
     scanf("%d",&a[k]);
