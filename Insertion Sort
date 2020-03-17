@@ -1,0 +1,30 @@
+#include <stdio.h>
+void InsertionSort()
+{
+     int size;
+     printf("Enter the size of array ");
+     scanf("%d",&size);
+    int A[size];
+    printf("Input the array ");
+    for(int j=0;j<size;j++)
+    scanf("%d",&A[j]);
+	for(int i=1; i<size; i++)
+	{
+		int value = A[i];
+		int hole = i;
+		while( hole>0 && A[hole-1]>value)
+		{
+			A[hole] = A[hole-1];
+			hole--;
+		}
+		A[hole] = value ;
+	}
+	printf("Sorted array is ");
+	for(int j=0;j<size;j++)
+	printf("%d ",A[j]);
+}
+int main()
+{
+    InsertionSort();
+    return 0;
+}
