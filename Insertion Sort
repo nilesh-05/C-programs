@@ -19,7 +19,7 @@ void InsertionSort()
 		}
 		A[hole] = value ;
 	}
-	printf("Sorted array is ");
+	printf("Sorted array is : ");
 	for(int j=0;j<size;j++)
 	printf("%d ",A[j]);
 }
